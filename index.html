@@ -7,6 +7,58 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
+    <div class="container">
+        <div class="img-container">
+            <img src="./Assets/L1000351.jpg" alt="Bridge in London">
+            <div class="logo-container">
+                <img src="./Assets/odin-lined.png" alt="The Odin Project Logo">
+                <div class="logo-name">Odin</div>
+            </div>
+        </div>
+        <div class="data-side-container">
+            <div class="info-container">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up not to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="login-container">
+                <p>Let's do this!</p>
+                <form action="submit_signup.php" method="post" onsubmit="return checkPassword(this)">
+                    <div class="form-group-pair">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group-pair">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="form-group-pair">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div id="statusField"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
